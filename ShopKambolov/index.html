@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>ShopProfile</title>
+</head>
+<body>
+    <div class="intro">
+        <div class="video">
+            <video class="media" src="okno_v1.mp4" autoplay muted loop></video>
+        </div>
+    </div>
+
+    <div class="intro-content">
+        <div class="container">
+            <h1 class="intro-title">Merry Christmas sale!</h1>
+        </div>
+        <form id="userParamsForm">
+            <div class="firmInput"><input type="text" id="height" name="height" placeholder="Фирма" required></div>
+            <div class="footSizeInput"><input type="number" id="footSize" name="footSize" placeholder="Размер стопы" required></div>
+            <div class="costInput"><input type="number" id="cost" name="cost" placeholder="Цена" required></div>
+            <button class="btn" type="submit" onclick="setForm(), filterProducts()">Фильтровать</button>
+        </form>
+    </div>
+
+    <div class="tableTitle"><h2>Обувь в наличии</h2></div>
+    <div class="shoesGrid" id="gridForm"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

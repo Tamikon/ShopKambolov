@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&family=Satisfy&display=swap');
+
+body {
+    background-image: url("okno_v1.mp4");
+    background-color: rgb(30, 17, 13);
+}
+
+input{
+    margin-top: 10px;
+}
+
+.btn{
+    margin-top: 10px;
+}
+
+.tableTitle{
+    display: flex;
+    justify-content: center;
+    color:rgb(170, 38, 38);
+    font-size: 3vh;
+    font-family: 'Rubik Doodle Shadow';
+}
+
+.shoesGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 13px;
+}
+
+.cell{
+    background-color: #e79955;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s; 
+}
+
+.intro{
+    max-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.intro:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgb(30, 17, 13, 1));
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.intro-content{
+    color:rgb(255, 92, 80);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro-title{
+    margin: 1;
+    font-family: 'Satisfy';
+    font-size: 10vh;
+    font-weight: 100;
+    color: coral;
+    text-align: left;
+}
+
+.video{
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+.media{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
